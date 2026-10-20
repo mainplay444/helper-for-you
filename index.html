@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="ToolBox – kostenlose praktische Online-Werkzeuge: Zufallsrad, Passwortgenerator, QR-Codes, Farben und mehr.">
+  <title>ToolBox — Praktische Werkzeuge</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#start" aria-label="ToolBox Startseite"><span class="brand-mark">✦</span><span>Tool<span class="brand-accent">Box</span></span></a>
+    <div class="top-actions"><button id="themeToggle" class="icon-btn" aria-label="Darstellung wechseln" title="Darstellung wechseln">☼</button><button id="menuToggle" class="icon-btn mobile-only" aria-label="Menü öffnen">☰</button></div>
+  </header>
+  <main id="start">
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> KOSTENLOSE WERKZEUGE · ALLES AN EINEM ORT</div>
+      <h1>Dein digitaler<br><span>Werkzeugkasten.</span></h1>
+      <p>Praktische Tools für Alltag, Schule, Gaming und kreative Ideen. Schnell, kostenlos und direkt im Browser.</p>
+      <label class="search-wrap"><span>⌕</span><input id="toolSearch" type="search" placeholder="Werkzeug suchen …" autocomplete="off"><kbd>⌘ K</kbd></label>
+      <div class="hero-tags"><span>✓ Ohne Anmeldung</span><span>✓ Datenschutzfreundlich</span><span>✓ Für Handy & PC</span></div>
+    </section>
+    <section class="section-heading"><div><p class="eyebrow small">ENTDECKEN</p><h2>Alle Werkzeuge</h2></div><span id="toolCount" class="count-pill">14 Werkzeuge</span></section>
+    <section id="toolGrid" class="tool-grid">
+      <button class="tool-card" data-tool="roulette" data-search="zufallsrad roulette glücksrad auswahl namen dinge"><span class="tool-icon purple">◉</span><span class="tool-title">Zufallsrad</span><span class="tool-desc">Lass das Rad entscheiden, was als Nächstes dran ist.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="password" data-search="passwort generator sicher zufall kennwort"><span class="tool-icon green">⌁</span><span class="tool-title">Passwortgenerator</span><span class="tool-desc">Erstelle zufällige Passwörter mit deinen Einstellungen.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="qr" data-search="qr code erstellen link text scannen"><span class="tool-icon blue">▦</span><span class="tool-title">QR-Code-Generator</span><span class="tool-desc">Wandle Text oder Links in einen QR-Code um.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="colors" data-search="zufallsfarbe farbe palette hex rgb design"><span class="tool-icon pink">◈</span><span class="tool-title">Farb-Generator</span><span class="tool-desc">Zufällige Farben und passende Paletten entdecken.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="calculator" data-search="taschenrechner rechnen mathematik"><span class="tool-icon orange">＋</span><span class="tool-title">Taschenrechner</span><span class="tool-desc">Für schnelle Rechnungen im Alltag.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="number" data-search="zufallszahl zufall nummer minimum maximum"><span class="tool-icon cyan">↯</span><span class="tool-title">Zufallszahl</span><span class="tool-desc">Ziehe eine Zahl zwischen zwei Grenzen.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="dice" data-search="würfel münze kopf zahl zufall spiel"><span class="tool-icon yellow">⚄</span><span class="tool-title">Würfel & Münze</span><span class="tool-desc">Würfle oder wirf eine virtuelle Münze.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="timer" data-search="stoppuhr timer countdown zeit"><span class="tool-icon blue">◷</span><span class="tool-title">Timer & Stoppuhr</span><span class="tool-desc">Zeit messen oder einen Countdown starten.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="nickname" data-search="nickname name gamer gaming zufällig"><span class="tool-icon purple">✧</span><span class="tool-title">Nickname-Generator</span><span class="tool-desc">Finde einen neuen Namen für Spiele und Profile.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="ideas" data-search="ideen generator aufgabe inspiration zufällig"><span class="tool-icon green">✳</span><span class="tool-title">Ideen-Generator</span><span class="tool-desc">Neue Mini-Challenges und kreative Impulse.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="text" data-search="textzähler wörter zeichen sätze zählen"><span class="tool-icon orange">¶</span><span class="tool-title">Textzähler</span><span class="tool-desc">Zähle Wörter, Zeichen und Sätze in einem Text.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="convert" data-search="einheiten umrechner länge gewicht temperatur"><span class="tool-icon cyan">⇄</span><span class="tool-title">Einheiten-Umrechner</span><span class="tool-desc">Rechne Länge, Gewicht und Temperatur um.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="gradient" data-search="gradient farbverlauf css design hintergrund"><span class="tool-icon pink">◩</span><span class="tool-title">CSS-Verlauf</span><span class="tool-desc">Gestalte Farbverläufe und kopiere den CSS-Code.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+      <button class="tool-card" data-tool="notes" data-search="notizen notizblock speichern text"><span class="tool-icon yellow">▤</span><span class="tool-title">Notizblock</span><span class="tool-desc">Speichere kurze Notizen direkt in diesem Browser.</span><span class="tool-open">Werkzeug öffnen ↗</span></button>
+    </section>
+    <section class="workspace" id="workspace" hidden>
+      <div class="workspace-head"><div><button id="backToTools" class="back-btn">← Alle Werkzeuge</button><p class="eyebrow small" id="toolCategory">TOOLBOX</p><h2 id="workspaceTitle">Werkzeug</h2><p id="workspaceSubtitle" class="workspace-subtitle"></p></div><button id="favoriteToggle" class="favorite-btn" title="Als Favorit markieren" aria-label="Favorit umschalten">☆</button></div>
+      <div id="toolPanel" class="tool-panel"></div>
+    </section>
+    <section class="section-heading favorites-heading"><div><p class="eyebrow small">DEINE SAMMLUNG</p><h2>Favoriten</h2></div></section>
+    <section id="favorites" class="favorites-empty">Markiere ein Werkzeug mit ☆, damit du es hier schneller findest.</section>
+    <section class="privacy-note"><span class="privacy-icon">⌑</span><div><strong>Deine Daten bleiben bei dir.</strong><p>Passwörter werden lokal erzeugt. Notizen und Favoriten werden nur in diesem Browser gespeichert. Teile sensible Daten nicht über öffentliche Geräte.</p></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#start"><span class="brand-mark">✦</span><span>Tool<span class="brand-accent">Box</span></span></a><span>Einfach nützlich. Jeden Tag.</span><span>© <span id="year"></span> ToolBox</span></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="resultDialog" class="result-dialog"><div class="dialog-inner"><button id="closeDialog" class="dialog-close" aria-label="Schließen">×</button><div class="success-icon">✓</div><p class="eyebrow small">ZUFALLSENTSCHEIDUNG</p><h2 id="winnerTitle">Ausgewählt!</h2><p id="winnerText"></p><button id="dialogOk" class="primary-btn">Alles klar</button></div></dialog>
+</body>
+</html>
